@@ -1,0 +1,20 @@
+#include<stdio.h>
+main()
+{
+	struct Student {
+		int id;
+		float feepaid;
+	};
+	int i;
+	struct Student s[5];
+	for(i=0;i<5;i++)
+	{
+		scanf("%d",&s[i].id);
+		scanf("%f",&s[i].feepaid);
+	}
+	for(i=0;i<5;i++)
+	{
+		printf("\nStudent id:%d",s[i].id);
+		printf("\nFee paid : %f",s[i].feepaid);
+	}
+}
